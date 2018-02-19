@@ -1,0 +1,28 @@
+{
+  "name": "github-parser",
+  "version": "0.1.0-alpha1",
+  "description": "Parse a Github URI.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9fv/node-github-parser.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "github",
+    "parser",
+    "uri",
+    "repository",
+    "git"
+  ],
+  "author": "SAS 9 Février <contact@9fevrier.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/9fv/node-github-parser/issues"
+  },
+  "homepage": "https://github.com/9fv/node-github-parser#readme"
+}
