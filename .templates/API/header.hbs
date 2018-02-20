@@ -1,0 +1,9 @@
+# API reference of {{settings '$.github.REPO_NAME'}}:{{settings '$.github.BRANCH_NAME'}}
+
+{{ settings '$.package.description' }}
+
+{{#if (settings '$.workInProgress')}}
+---
+&#x1F34E; **__Warning !__ Work in progress...**
+---
+{{/if}}

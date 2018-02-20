@@ -1,37 +1,39 @@
-[npm-badge]: https://img.shields.io/npm/v/github-uri-https-parser.svg
-[npm-badge-url]: https://www.npmjs.com/package/github-uri-https-parser
-[npm-downloads-badge]: https://img.shields.io/npm/dt/github-uri-https-parser.svg
-[npm-downloads-url]: https://npmjs.org/package/github-uri-https-parser
-[travis-badge]: https://img.shields.io/travis/9fv/node-github-uri-https-parser/master.svg?label=TravisCI
-[travis-badge-url]: https://travis-ci.org/9fv/node-github-uri-https-parser
-[circle-badge]: https://circleci.com/gh/9fv/node-github-uri-https-parser/tree/master.svg?style=svg&circle-token=
-[circle-badge-url]: https://circleci.com/gh/9fv/node-github-uri-https-parser/tree/master
-[coveralls-badge]: https://coveralls.io/repos/github/9fv/node-github-uri-https-parser/badge.svg?branch=master
-[coveralls-badge-url]: https://coveralls.io/github/9fv/node-github-uri-https-parser?branch=master
-[codeclimate-badge]: https://img.shields.io/codeclimate/github/9fv/node-github-uri-https-parser.svg
-[codeclimate-badge-url]: https://codeclimate.com/github/9fv/node-github-uri-https-parser
-[ember-observer-badge]: http://emberobserver.com/badges/node-github-uri-https-parser.svg
-[ember-observer-badge-url]: http://emberobserver.com/addons/node-github-uri-https-parser
-[license-badge]: https://img.shields.io/npm/l/github-uri-https-parser.svg
+[npm-badge]: https://img.shields.io/npm/v/{{package.name}}.svg
+[npm-badge-url]: https://www.npmjs.com/package/{{package.name}}
+[npm-downloads-badge]: https://img.shields.io/npm/dt/{{package.name}}.svg
+[npm-downloads-url]: https://npmjs.org/package/{{package.name}}
+[travis-badge]: https://img.shields.io/travis/{{github.USER_NAME}}/{{github.REPO_NAME}}/{{github.BRANCH_NAME}}.svg?label=TravisCI
+[travis-badge-url]: https://travis-ci.org/{{github.USER_NAME}}/{{github.REPO_NAME}}
+[circle-badge]: https://circleci.com/gh/{{github.USER_NAME}}/{{github.REPO_NAME}}/tree/{{github.BRANCH_NAME}}.svg?style=svg&circle-token={{CIRCLE_TOKEN}}
+[circle-badge-url]: https://circleci.com/gh/{{github.USER_NAME}}/{{github.REPO_NAME}}/tree/{{github.BRANCH_NAME}}
+[coveralls-badge]: https://coveralls.io/repos/github/{{github.USER_NAME}}/{{github.REPO_NAME}}/badge.svg?branch={{github.BRANCH_NAME}}
+[coveralls-badge-url]: https://coveralls.io/github/{{github.USER_NAME}}/{{github.REPO_NAME}}?branch={{github.BRANCH_NAME}}
+[codeclimate-badge]: https://img.shields.io/codeclimate/github/{{github.USER_NAME}}/{{github.REPO_NAME}}.svg
+[codeclimate-badge-url]: https://codeclimate.com/github/{{github.USER_NAME}}/{{github.REPO_NAME}}
+[ember-observer-badge]: http://emberobserver.com/badges/{{github.REPO_NAME}}.svg
+[ember-observer-badge-url]: http://emberobserver.com/addons/{{github.REPO_NAME}}
+[license-badge]: https://img.shields.io/npm/l/{{package.name}}.svg
 [license-badge-url]: LICENSE.md
-[dependencies-badge]: https://img.shields.io/david/9fv/node-github-uri-https-parser.svg
-[dependencies-badge-url]: https://david-dm.org/9fv/node-github-uri-https-parser
-[devDependencies-badge]: https://img.shields.io/david/dev/9fv/node-github-uri-https-parser.svg
-[devDependencies-badge-url]: https://david-dm.org/9fv/node-github-uri-https-parser#info=devDependencies
-[greenkeeper-badge]: https://badges.greenkeeper.io/9fv/node-github-uri-https-parser.svg
+[dependencies-badge]: https://img.shields.io/david/{{github.USER_NAME}}/{{github.REPO_NAME}}.svg
+[dependencies-badge-url]: https://david-dm.org/{{github.USER_NAME}}/{{github.REPO_NAME}}
+[devDependencies-badge]: https://img.shields.io/david/dev/{{github.USER_NAME}}/{{github.REPO_NAME}}.svg
+[devDependencies-badge-url]: https://david-dm.org/{{github.USER_NAME}}/{{github.REPO_NAME}}#info=devDependencies
+[greenkeeper-badge]: https://badges.greenkeeper.io/{{github.USER_NAME}}/{{github.REPO_NAME}}.svg
 [greenkeeper-badge-url]: https://greenkeeper.io/
 [standardjs-badge]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [standardjs-badge-url]: https://standardjs.com
 
 
-node-github-uri-https-parser
+{{github.REPO_NAME}}
 ====================
 
-Parse a Github HTTPS URI.
+{{package.description}}
 
+{{#workInProgress}}
 ---
 &#x1F34E; <span style="color:red">**__Warning !__ Work in progress...**</span>
 ---
+{{/workInProgress}}
 
 [![JavaScript Style Guide][standardjs-badge]][standardjs-badge-url]
 [![Latest NPM release][npm-badge]][npm-badge-url]
@@ -65,22 +67,15 @@ Parse a Github HTTPS URI.
 
 ## <a name="synopsis"> Synopsis
 
-Parse a Github HTTPS URI.
+{{package.description}}
 
 ## <a name="usage"> Usage
 
-```javascript
-
-const {githubUriHttpsParser} = require('github-uri-https-parser');
-
-githubUriHttpsParser('https://github.com/9fv/node-github-uri-https-parser');
-# > {"username": "9fv", "repository": "node-github-uri-https-parser"}
-
-```
+{{> usage }}
 
 ## <a name="installation"> Installation
 
-    npm install github-uri-https-parser
+    npm install {{package.name}}
 
 ## <a name="api-reference"> API Reference
 
@@ -106,7 +101,7 @@ Please refer to [API documentation](docs/API.md).
 
 ### <a name="compatibility_node"> Node
 
-Tested using [Node 9.5.0](https://nodejs.org/dist/v9.5.0/docs/api/).
+Tested using [Node {{ node.version }}](https://nodejs.org/dist/v{{ node.version }}/docs/api/).
 
 ### <a name="compatibility_browser"> Browser
 
@@ -114,7 +109,7 @@ Untested at this time.
 
 ## <a name="issues"> Issues
 
-Feel free to [submit issues](https://github.com/9fv/node-github-uri-https-parser/issues) and enhancement requests.
+Feel free to [submit issues]({{{ package.bugs.url }}}) and enhancement requests.
 
 ## <a name="contributing"> Contributing
 
@@ -130,6 +125,7 @@ Please refer to project's style guidelines and guidelines for submitting patches
 
 ## <a name="credits"> Credits
 
+{{> credits }}
 
 ## <a name="history"> History
 

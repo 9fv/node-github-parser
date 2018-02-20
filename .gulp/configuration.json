@@ -1,0 +1,41 @@
+{
+  "author": {
+    "name": "SAS 9 Février",
+    "url": "https://9fevrier.com/"
+  },
+  "github": {
+    "USER_NAME": "9fv",
+    "REPO_NAME": "node-github-uri-https-parser"
+  },
+  "workInProgress": true,
+  "node": {
+    "version": "9.5.0"
+  },
+  "sources": {
+    "path": "lib/",
+    "pattern": "**/*.js"
+  },
+  "tests": {
+    "path": "test/",
+    "pattern": "**/*.test.js"
+  },
+  "templates": {
+    "basepath": ".templates",
+    "files": {
+      "API": "API.md.hbs",
+      "README": "README.md.mustache",
+      "CREDITS": "CREDITS.md.mustache",
+      "USAGE": "USAGE.md.mustache"
+    },
+    "partials": {
+      "basepath": ".templates/API",
+      "pattern": "**/*.hbs"
+    }
+  },
+  "gulp": {
+    "tasks": {
+      "path": ".gulp/tasks",
+      "pattern": "**/*.js"
+    }
+  }
+}
