@@ -54,5 +54,5 @@ Parse a Github HTTPS URI to get username and repository.
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 > SOFTWARE.
 >***
-<p style="text-align: center">Documentation generated on Tue, 20 Feb 2018 16:57:27 GMT</p>
-<p style="text-align: center">**Copyright &copy; 2018 [SAS 9 Février](https://9fevrier.com/)**</p>
+<p style="text-align: center">Documentation generated on Tue, 20 Feb 2018 17:00:42 GMT</p>
+<p style="text-align: center; font-weight: bold;">Copyright &copy; 2018 [SAS 9 Février](https://9fevrier.com/)</p>
