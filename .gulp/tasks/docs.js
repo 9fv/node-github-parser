@@ -13,6 +13,7 @@ gulp.task('docs-api', () => {
       template: content,
       files: path.join(settings('$.sources.path'), settings('$.sources.pattern')),
       'example-lang': 'js',
+      'heading-depth': 3,
       partial: path.join(settings('$.templates.partials.basepath'), settings('$.templates.partials.pattern')),
       helper: '.gulp/tasks/settings.js'
     }))
