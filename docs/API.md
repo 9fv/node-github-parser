@@ -53,7 +53,10 @@ Parse a Github HTTPS URI to get username and repository.
 > LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 > SOFTWARE.
->***
-_Documentation generated on Tue, 20 Feb 2018 17:01:35 GMT_
+>
+
+***
+
+_Documentation generated on Tue, 20 Feb 2018 17:02:29 GMT_
 
 **Copyright &copy; 2018 [SAS 9 Février](https://9fevrier.com/)**
