@@ -1,6 +1,6 @@
 {
   "name": "github-uri-https-parser",
-  "version": "0.1.0-alpha1",
+  "version": "0.1.1-alpha1",
   "description": "Parse a Github HTTPS URI.",
   "main": "lib/github-uri-https-parser.js",
   "scripts": {

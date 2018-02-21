@@ -13,6 +13,7 @@ require('should')
 const {githubUriHttpsParser} = require('../lib/github-uri-https-parser')
 
 const fullGithubURI = 'git+https://github.com/9fv/node-github-uri-https-parser.git'
+const fullGithubURIIncludingDot = 'git+https://github.com/pigalle-io/pigalle.core.base.class.git'
 const simpleGithubURI = 'https://github.com/9fv/node-github-uri-https-parser.git'
 const partialGithubURI = 'https://github.com/9fv/node-github-uri-https-parser'
 
@@ -65,6 +66,22 @@ describe('Parse ', () => {
 
   it('a full Github URI should return an object with a property repository equals to node-github-uri-https-parser', () => {
     (githubUriHttpsParser(fullGithubURI).repository).should.be.equal('node-github-uri-https-parser')
+  })
+
+  it('a full Github URI including dot character including dot character should return object', () => {
+    (githubUriHttpsParser(fullGithubURIIncludingDot)).should.be.an.instanceOf(Object)
+  })
+
+  it('a full Github URI including dot character including dot character should return an object with properties (username, repository)', () => {
+    (githubUriHttpsParser(fullGithubURIIncludingDot)).should.have.properties('username', 'repository')
+  })
+
+  it('a full Github URI including dot character including dot character should return an object with a property username equals to 9fv', () => {
+    (githubUriHttpsParser(fullGithubURIIncludingDot).username).should.be.equal('pigalle-io')
+  })
+
+  it('a full Github URI including dot character including dot character should return an object with a property repository equals to node-github-uri-https-parser', () => {
+    (githubUriHttpsParser(fullGithubURIIncludingDot).repository).should.be.equal('pigalle.core.base.class')
   })
 
   it('a partial Github URI should return object', () => {
